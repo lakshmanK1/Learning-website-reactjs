@@ -1,12 +1,15 @@
 import React from 'react'
 import Header from '../Header/Header';
+import Welcome from '../Welcome/Welcome';
 
-import { HomeDiv } from './StyledHome';
+import { HomeDiv, HR } from './StyledHome';
 
 function Home() {
   return (
     <HomeDiv>
         <Header/>
+        <HR/>
+        <Welcome/>
     </HomeDiv>
   )
 }

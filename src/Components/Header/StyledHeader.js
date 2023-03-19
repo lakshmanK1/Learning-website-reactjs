@@ -14,3 +14,4 @@ export const TabsDiv = styled.div`padding:0.5rem; margin-top:1rem; margin-right:
 
 export const TabSpan = styled.span`font-family: 'Inter', sans-serif; color:#38E54D; margin-left:2rem;
 font-size:1rem; font-weight:600;`;
+
