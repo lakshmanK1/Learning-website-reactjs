@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterDiv = styled.div`background-color:#38E54D;
-height:10rem; margin-top:237px;`;
+height:10rem; margin-top:10rem;`;
 
 export const SocialIconsDiv = styled.div`display:flex; justify-content:center;`;
 

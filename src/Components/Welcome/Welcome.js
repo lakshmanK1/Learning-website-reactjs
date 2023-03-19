@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { Button, ButtonDiv, Text, TextDiv, Title, WelcomeDiv } from './StyledWelcome'
-
-function Welcome() {
+import { Link } from 'react-router-dom';
+function Welcome({learning}) {
   return (
     <WelcomeDiv>
          <TextDiv>
@@ -10,7 +10,7 @@ function Welcome() {
             <Text>Ed Learn is a freemium educational website for learning coding online.</Text>
          </TextDiv>
          <ButtonDiv>
-            <Button>Start Learning!</Button>
+            <Link to='/learning'><Button onClick={learning}>Start Learning!</Button></Link>
          </ButtonDiv>
     </WelcomeDiv>
   );

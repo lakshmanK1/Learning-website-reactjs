@@ -1,17 +1,23 @@
-import React from 'react'
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import React,{useState} from 'react'
+import { Route, Routes } from 'react-router-dom';
+import Learning from '../Learning/Learning';
 import Welcome from '../Welcome/Welcome';
 
 import { HomeDiv, HR } from './StyledHome';
 
 function Home() {
+    const [isLearning, setIsLearning] = useState(false);
+
+    const toggleLearning = () => {
+        setIsLearning(true);
+    }
+
   return (
     <HomeDiv>
-        <Header/>
-        <HR/>
-        <Welcome/>
-        <Footer/>
+        <Routes>
+            {!isLearning && <Route exact path='/' element={<Welcome learning={toggleLearning}/>}/>}
+            {isLearning && <Route exact path='/learning' element={<Learning/>}/>}
+        </Routes>
     </HomeDiv>
   )
 }
