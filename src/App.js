@@ -9,9 +9,7 @@ function App() {
     <div>
       <Header/>
       <HR/>
-      <div style={{height:'18rem'}}>
       <Home/>
-      </div>
       <Footer/>
     </div>
   );

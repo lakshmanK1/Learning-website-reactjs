@@ -24,7 +24,7 @@ function Learning() {
             case "Simple Program":
                 return <SimpleProgram/>  
                
-            case "Comple Program":
+            case "Complex Program":
                 return <ComplexProgram/>    
         }
     }

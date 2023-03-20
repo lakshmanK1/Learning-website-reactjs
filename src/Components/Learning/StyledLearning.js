@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Learning
-export const LearningDiv = styled.div``;
+export const LearningDiv = styled.div`overflow: hidden;`;
 
 
 

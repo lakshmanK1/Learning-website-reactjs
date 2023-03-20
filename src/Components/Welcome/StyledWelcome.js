@@ -13,7 +13,7 @@ export const Text = styled.p``;
 export const ButtonDiv = styled.div``;
 
 export const Button = styled.button`color:#38E54D; background-color:white;
-border:3px solid #38E54D; padding:0.5rem; font-weight:900; cursor:pointer;
+border:3px solid #38E54D; padding:0.5rem; font-weight:900; cursor:pointer; border-radius:0.5rem;
 :hover{
     color:white;
     background-color:#38E54D;
