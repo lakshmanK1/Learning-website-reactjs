@@ -26,4 +26,13 @@ export const ProgramsDiv = styled.div``;
 
 
 // For LanguaOptions component
-export const ProLanguage = styled.span``;
+export const LanguaOptionsDiv = styled.div`margin: 3rem auto; width:40%;
+border-radius: 1rem; background-color: #EEEEEE; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+padding: 2rem; text-align: center;`;
+
+export const InnDiv = styled.div`margin:1.5rem;`;
+
+export const ProLanguage = styled.span`color:#146C94; font-size:1.2rem; font-weight:700; cursor:pointer;
+:hover{
+    color:#060047;
+}`;
