@@ -23,78 +23,127 @@ Array in reverse order:
 5    4   3   2   1`
 };
 
-export const CAddition = {
+export const CAReverse = {
     code:`
-    #include <stdio.h>
-    int main() {    
-    
-        int number1, number2, sum;
-        
-        printf("Enter two integers: ");
-        scanf("%d %d", &number1, &number2);
-    
-        // calculate the sum
-        sum = number1 + number2;      
-        
-        printf("%d + %d = %d", number1, number2, sum);
-        return 0;
-    }`,
-    output:'Enter two integers: 10 + 10 = 20',
-    input:'10 10'
-};
-
-export const CPlusPlusAddition = {
-    code:`
-    #include <iostream>
-    using namespace std;
-    
-    int main() {
-    
-      int first_number, second_number, sum;
-        
-      cout << "Enter two integers: ";
-      cin >> first_number >> second_number;
-    
-      // sum of two numbers in stored in variable sumOfTwoNumbers
-      sum = first_number + second_number;
-    
-      // prints sum 
-      cout << first_number << " + " <<  second_number << " = " << sum;     
-    
-      return 0;
-    }`,
-    output:'Enter two integers: 10 + 10 = 20',
-    input:'10 10'
-};
-
-export const PythonAddition = {
-    code:`
-# This program adds two numbers
-
-num1 = 1.5
-num2 = 6.3
-
-# Add two numbers
-sum = num1 + num2
-
-# Display the sum
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+#include<stdio.h>  
+int main()  
+{  
+    int n, arr[n], i;  
+    printf("Enter the size of the array: ");  
+    scanf("%d", &n);  
+    printf("Enter the elements: ");  
+    for(i = 0; i < n; i++)  
+    {  
+        scanf("%d", &arr[i]);  
+    }  
+    int rev[n], j = 0;  
+    for(i = n-1; i >= 0; i--)  
+    {  
+        rev[j] = arr[i];  
+        j++;  
+    }  
+    printf("The Reversed array: ");  
+    for(i = 0; i < n; i++)  
+    {  
+        printf("%d ", rev[i]);  
+    }  
+}  
     `,
-    output:"The sum of 1.5 and 6.3 is 7.8"
+    output:`
+    Enter the size of the array: 5
+    Enter the elements: 1 2 3 4 5
+    The Reversed array: 5 4 3 2 1
+    `,
+    input:'10 10'
+}
 
+export const CPlusPlusReverse = {
+    code:`
+#include <iostream>  
+using namespace std;  
+  
+int main ()  
+{  
+    int arr[50], num, temp, i, j;  
+    cout << " Please, enter the total no. you want to enter: ";  
+    cin >> num;  
+      
+    // use for loop to enter the numbers   
+    for (i = 0; i < num; i++)  
+    {  
+        cout << " Enter the element " << i+1 << ": ";  
+        cin >> arr[i];  
+    }  
+      
+      
+    for ( i = 0, j = num - 1; i < num/2; i++, j--)  
+    {     
+        temp = arr[i];  
+        arr[i] = arr[j];  
+        arr[j] = temp;  
+    }  
+    cout << "\n Reverse all elements of the array: " << endl;  
+    // use for loop to print the reverse array  
+    for ( i = 0; i < num; i++)  
+    {  
+        cout << arr[i] << " ";  
+    }  
+    return 0;  
+}
+    `,
+    output:`
+ Please, enter the total no. you want to enter: 6
+ Enter the element 1: 78
+ Enter the element 2: 12
+ Enter the element 3: 54
+ Enter the element 4: 24
+ Enter the element 5: 7
+ Enter the element 6: 90
+
+ Reverse all elements of the array:
+90 7 24 54 12 78
+    `,
+    input:'10 10'
+};
+
+export const PythonReverse = {
+    code:`
+#Initialize array     
+arr = [1, 2, 3, 4, 5];     
+print("Original array: ");    
+for i in range(0, len(arr)):    
+    print(arr[i]),     
+print("Array in reverse order: ");    
+#Loop through the array in reverse order    
+for i in range(len(arr)-1, -1, -1):     
+    print(arr[i]),  
+    `,
+    output:`
+Original array: 
+1	2   3   4   5
+Array in reverse order:
+5    4   3   2   1`
 }
 ;
 
-export const JavscriptAddition = {
+export const JavscriptReverse = {
     code:`
-const num1 = 5;
-const num2 = 3;
-
-// add two numbers
-const sum = num1 + num2;
-
-// display the sum
-console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);
+    function ReverseNewArr(arr){
+        let first = 0;
+        let last = arr.length-1;
+    
+        while(first < last){
+            var temp = arr[first];
+            arr[first] = arr[last];
+            arr[last] = temp;
+            first++;
+            last--;
+        }
+    
+        return arr;
+    }
+    let newArr = [1,2,3,4,5,6,7];
+    console.log(ReverseNewArr(newArr));
     `,
-    output:'The sum of 5 and 3 is: 8'
+    output:'[7,6,5,4,3,2,1]'
 };

@@ -1,13 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { JavaReverse, CAReverse, CPlusPlusReverse, PythonReverse, JavscriptReverse } from "./AdCodeData";
 
 const AdCodesSlice = createSlice({
     name:"Codes",
     initialState:{
-        AdJavaPro:JavaAddition,
-        AdCPro:CAddition,
-        AdCPlusPlusPro:CPlusPlusAddition,
-        AdPythonPro:PythonAddition,
-        AdJavascriptPro:JavscriptAddition
+        JavaPro:JavaReverse,
+        CPro:CAReverse,
+        CPlusPlusPro:CPlusPlusReverse,
+        PythonPro:PythonReverse,
+        JavascriptPro:JavscriptReverse
     }
 })
 
