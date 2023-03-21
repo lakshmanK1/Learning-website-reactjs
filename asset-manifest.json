@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ed-learn/static/css/main.073c9b0a.css",
-    "main.js": "/ed-learn/static/js/main.3fe7690b.js",
-    "static/js/787.0ea1fc4b.chunk.js": "/ed-learn/static/js/787.0ea1fc4b.chunk.js",
-    "index.html": "/ed-learn/index.html",
-    "main.073c9b0a.css.map": "/ed-learn/static/css/main.073c9b0a.css.map",
-    "main.3fe7690b.js.map": "/ed-learn/static/js/main.3fe7690b.js.map",
-    "787.0ea1fc4b.chunk.js.map": "/ed-learn/static/js/787.0ea1fc4b.chunk.js.map"
+    "main.css": "/Learning-website-reactjs/static/css/main.073c9b0a.css",
+    "main.js": "/Learning-website-reactjs/static/js/main.3a863e98.js",
+    "static/js/787.0ea1fc4b.chunk.js": "/Learning-website-reactjs/static/js/787.0ea1fc4b.chunk.js",
+    "index.html": "/Learning-website-reactjs/index.html",
+    "main.073c9b0a.css.map": "/Learning-website-reactjs/static/css/main.073c9b0a.css.map",
+    "main.3a863e98.js.map": "/Learning-website-reactjs/static/js/main.3a863e98.js.map",
+    "787.0ea1fc4b.chunk.js.map": "/Learning-website-reactjs/static/js/787.0ea1fc4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.3fe7690b.js"
+    "static/js/main.3a863e98.js"
   ]
 }
