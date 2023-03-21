@@ -2,10 +2,10 @@ import React from 'react'
 
 import { HeaderDiv, LogoDiv, LogoSpanOne, LogoSpanTwo, TabsDiv, TabSpan } from './StyledHeader'
 
-function Header() {
+function Header({setIsLearning}) {
   return (
     <HeaderDiv>
-        <LogoDiv>
+        <LogoDiv onClick={()=>setIsLearning(false)}>
             <LogoSpanOne>Ed</LogoSpanOne>
             <LogoSpanTwo>Learn</LogoSpanTwo>
         </LogoDiv> 
